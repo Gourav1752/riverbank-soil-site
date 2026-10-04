@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Data &amp; Analysis · Riverbank Soil Study</title>
+<meta name="description" content="Record before- and after-flood soil-test results and calculate nutrient change by sampling zone.">
+<meta property="og:title" content="Data &amp; Analysis · Riverbank Soil Study">
+<meta property="og:description" content="Record before- and after-flood soil-test results and calculate nutrient change by sampling zone.">
+<meta name="theme-color" content="#F0F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101714" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&amp;family=Zilla+Slab:wght@500;600;700&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>(function(){try{var t=localStorage.getItem('soilStudy.theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="var(--river-soft)"/><path d="M0 12c4-2 8 2 12 0s8-2 12 0 6 1 8 0v20H0z" fill="var(--river)" opacity=".35"/><path d="M0 16h32v4H0z" fill="var(--silt)"/><path d="M0 20h32v5H0z" fill="var(--topsoil)"/><path d="M0 25h32v7H0z" fill="var(--subsoil)"/></svg>
+      <span class="brand-text"><span class="brand-name">Riverbank Soil Study</span><span class="brand-sub">Before &amp; after flooding</span></span>
+    </a>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li><li><a href="background.html">Nutrients &amp; Flooding</a></li><li><a href="methodology.html">Methodology</a></li><li><a href="data.html" aria-current="page">Data &amp; Analysis</a></li><li><a href="crops.html">Crops</a></li><li><a href="fertilizers.html">Fertilizers</a></li><li><a href="outlook.html">Outlook</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch theme"><svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg><svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.6A8 8 0 0 1 9.4 4a8 8 0 1 0 10.6 10.6z"/></svg></button>
+      <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Sections 10&ndash;13 &middot; Observation, analysis and comparison</p>
+    <h1>Before vs. after data sheet</h1>
+    <p class="lead">Enter laboratory results for each sampling zone. The sheet calculates absolute and percentage change, classifies each parameter as increased, decreased or stable, and flags deficiencies against the critical limits from your soil-test report.</p>
+  </div>
+</header>
+<div class="strata" aria-hidden="true"><span></span><span></span><span></span></div>
+
+<section class="section">
+  <div class="wrap tool-layout">
+
+    <div id="example-banner" class="banner no-print" hidden>
+      <p><strong>Example value loaded.</strong> The potassium row in Sample A shows the worked example from Section 11 (150 &rarr; 120 mg/kg). Replace it with your laboratory results; assumed values should not be presented as experimental results.</p>
+      <button class="btn secondary small" type="button" id="btn-dismiss-example">Remove example</button>
+    </div>
+
+    <details class="panel" id="site-panel" open>
+      <summary class="panel-title" style="cursor:pointer">Site details</summary>
+      <div class="form-grid">
+        <div class="field"><label for="meta-site">Study site</label><input type="text" id="meta-site" data-meta="site" placeholder="Village / field name"></div>
+        <div class="field"><label for="meta-river">River</label><input type="text" id="meta-river" data-meta="river" placeholder="River name"></div>
+        <div class="field"><label for="meta-pre">Pre-flood sampling date</label><input type="date" id="meta-pre" data-meta="pre"></div>
+        <div class="field"><label for="meta-post">Post-flood sampling date</label><input type="date" id="meta-post" data-meta="post"></div>
+        <div class="field"><label for="meta-depth">Sampling depth</label><input type="text" id="meta-depth" data-meta="depth" placeholder="e.g. 0&ndash;15 cm"></div>
+      </div>
+    </details>
+
+    <div class="tool-bar no-print">
+      <fieldset>
+        <legend>Sampling zone</legend>
+        <div class="toggle-group" id="zone-group" role="radiogroup" style="margin-top:.35rem">
+          <label for="zone-A"><input type="radio" name="zone" id="zone-A" value="A"><span>Sample A<small>Close to riverbank</small></span></label>
+          <label for="zone-B"><input type="radio" name="zone" id="zone-B" value="B"><span>Sample B<small>Medium distance</small></span></label>
+          <label for="zone-C"><input type="radio" name="zone" id="zone-C" value="C"><span>Sample C<small>Farther / reference</small></span></label>
+        </div>
+      </fieldset>
+      <div class="tb-group">
+        <div class="field tol-field">
+          <label for="tolerance">Stable if within &plusmn;%</label>
+          <input type="number" id="tolerance" min="0" max="100" step="0.5" inputmode="decimal">
+        </div>
+      </div>
+    </div>
+
+    <div class="summary-grid" id="summary" aria-live="polite"></div>
+
+    <div class="panel">
+      <div class="stack" style="--gap:.25rem">
+        <h2 class="panel-title" id="chart-title">Percentage change after flooding</h2>
+        <p class="muted" style="font-size:.92rem">Bars to the right increased, bars to the left decreased. The shaded band is the stability tolerance.</p>
+      </div>
+      <div class="chart-wrap" id="chart"></div>
+    </div>
+
+    <div class="stack" style="--gap:.6rem">
+      <div class="tool-bar">
+        <h2 class="panel-title" id="table-title">Observation table</h2>
+        <div class="tb-group no-print">
+          <button class="btn secondary small" type="button" id="btn-clear">Clear this zone</button>
+          <button class="btn secondary small" type="button" id="btn-example">Load worked example</button>
+        </div>
+      </div>
+      <p class="muted" style="font-size:.92rem; max-width:var(--measure)">Enter a <strong>critical limit</strong> from your soil-test report to flag deficiency automatically (a value below the limit is deficient). Without a limit, set the status yourself. pH and EC are marked <em>Changed</em> when they move outside the tolerance.</p>
+      <div class="table-wrap">
+        <table class="data-table" id="data-table">
+          <thead>
+            <tr>
+              <th scope="col">Parameter</th>
+              <th scope="col">Unit</th>
+              <th scope="col" class="num h-before">Before flood</th>
+              <th scope="col" class="num h-after">After flood</th>
+              <th scope="col" class="num">Change</th>
+              <th scope="col" class="num">% change</th>
+              <th scope="col">Direction</th>
+              <th scope="col" class="num">Critical limit</th>
+              <th scope="col">Status before</th>
+              <th scope="col">Status after</th>
+              <th scope="col">Possible interpretation</th>
+            </tr>
+          </thead>
+          <tbody id="data-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2 class="panel-title" id="findings-title">Findings</h2>
+      <div class="findings" id="findings"></div>
+      <div class="btn-row no-print">
+        <a class="btn" href="crops.html" id="to-crops">Find suitable crops for these results &rarr;</a>
+        <a class="btn secondary" href="fertilizers.html">Fertilizer guidance</a>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="stack" style="--gap:.25rem">
+        <h2 class="panel-title">Zone comparison</h2>
+        <p class="muted" style="font-size:.92rem">Percentage change in each zone. A stronger change near the river than at the reference zone points to a direct flood effect.</p>
+      </div>
+      <div class="table-wrap">
+        <table class="matrix">
+          <thead><tr><th scope="col">Parameter</th><th scope="col">A &middot; near bank</th><th scope="col">B &middot; medium</th><th scope="col">C &middot; reference</th></tr></thead>
+          <tbody id="matrix-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="panel no-print">
+      <h2 class="panel-title">Save, share or print</h2>
+      <p class="muted" style="font-size:.95rem">Your entries are saved automatically in this browser. Export a CSV file to keep a copy, move the data to another device or open it in a spreadsheet.</p>
+      <div class="btn-row">
+        <button class="btn" type="button" id="btn-export">Download CSV</button>
+        <button class="btn secondary" type="button" id="btn-copy">Copy CSV</button>
+        <label class="btn secondary" for="file-import" style="cursor:pointer">Import CSV</label>
+        <input type="file" id="file-import" accept=".csv,text/csv" class="visually-hidden">
+        <button class="btn secondary" type="button" id="btn-print">Print report</button>
+        <button class="btn danger" type="button" id="btn-reset">Reset all zones</button>
+      </div>
+      <p class="status-line" id="status" role="status"></p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Section 11 &middot; Data analysis</p>
+      <h2>How the sheet calculates change</h2>
+    </div>
+    <div class="split even">
+      <div class="stack">
+        <h3>Absolute change</h3>
+        <p class="formula">Change = After-flood value &minus; Before-flood value</p>
+        <h3>Percentage change</h3>
+        <p class="formula">% change = [(After &minus; Before) / Before] &times; 100</p>
+      </div>
+      <div class="stack">
+        <h3>Worked example: potassium</h3>
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><th scope="row">Before flooding</th><td class="num">150 mg/kg</td></tr>
+              <tr><th scope="row">After flooding</th><td class="num">120 mg/kg</td></tr>
+              <tr><th scope="row">Percentage change</th><td class="num">[(120 &minus; 150) / 150] &times; 100 = &minus;20%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The measured potassium concentration decreased by 20%. The same calculation applies to every other parameter.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Sections 12&ndash;13 &middot; Interpretation framework</p>
+      <h2>Reading the before vs. after comparison</h2>
+      <p class="muted">Each parameter either increased, decreased or stayed relatively stable. Flooding should not automatically be read as causing only nutrient loss; the result depends on the site.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Observation</th><th scope="col">Possible interpretation</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Nutrient concentration decreases</th><td>Possible leaching, runoff, erosion or plant uptake</td></tr>
+          <tr><th scope="row">Nutrient concentration increases</th><td>Possible sediment deposition or mineral accumulation</td></tr>
+          <tr><th scope="row">Organic matter increases</th><td>Possible deposition of organic-rich sediments</td></tr>
+          <tr><th scope="row">pH changes</th><td>Possible alteration of soil chemical conditions</td></tr>
+          <tr><th scope="row">EC increases</th><td>Possible salt / mineral accumulation</td></tr>
+          <tr><th scope="row">Nitrogen decreases</th><td>Possible leaching or denitrification</td></tr>
+          <tr><th scope="row">Potassium decreases</th><td>Possible mobility and removal through floodwater</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout caution" style="margin-top:1.5rem">
+      <p class="callout-title">Deficiency status comes from real test results</p>
+      <p>Leaching, erosion, runoff, denitrification and removal of topsoil can all cause loss, but flood sediment may add nutrients and organic matter at the same time. Decide the final deficiency status from actual post-flood soil-test results, not from an assumption that every nutrient falls.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="footer-title">Assessment of Soil Mineral and Nutrient Deficiency Before and After Flooding Near Riverbanks</p>
+      <p class="muted">Project report website. Soil-test values you enter on the Data &amp; Analysis page are saved only in your own browser.</p>
+      <p class="muted">&copy; <span data-year>2026</span> &middot; Riverbank Soil Study</p>
+    </div>
+    <nav aria-label="Footer"><ul><li><a href="index.html">Home</a></li><li><a href="background.html">Nutrients &amp; Flooding</a></li><li><a href="methodology.html">Methodology</a></li><li><a href="data.html">Data &amp; Analysis</a></li><li><a href="crops.html">Crops</a></li><li><a href="fertilizers.html">Fertilizers</a></li><li><a href="outlook.html">Outlook</a></li></ul></nav>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/soil-core.js" defer></script>
+<script src="assets/js/data.js" defer></script>
+</body>
+</html>

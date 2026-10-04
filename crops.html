@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Crops · Riverbank Soil Study</title>
+<meta name="description" content="Post-flood crop selection by drainage, season and nutrient status.">
+<meta property="og:title" content="Crops · Riverbank Soil Study">
+<meta property="og:description" content="Post-flood crop selection by drainage, season and nutrient status.">
+<meta name="theme-color" content="#F0F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101714" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&amp;family=Zilla+Slab:wght@500;600;700&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>(function(){try{var t=localStorage.getItem('soilStudy.theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="var(--river-soft)"/><path d="M0 12c4-2 8 2 12 0s8-2 12 0 6 1 8 0v20H0z" fill="var(--river)" opacity=".35"/><path d="M0 16h32v4H0z" fill="var(--silt)"/><path d="M0 20h32v5H0z" fill="var(--topsoil)"/><path d="M0 25h32v7H0z" fill="var(--subsoil)"/></svg>
+      <span class="brand-text"><span class="brand-name">Riverbank Soil Study</span><span class="brand-sub">Before &amp; after flooding</span></span>
+    </a>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li><li><a href="background.html">Nutrients &amp; Flooding</a></li><li><a href="methodology.html">Methodology</a></li><li><a href="data.html">Data &amp; Analysis</a></li><li><a href="crops.html" aria-current="page">Crops</a></li><li><a href="fertilizers.html">Fertilizers</a></li><li><a href="outlook.html">Outlook</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch theme"><svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg><svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.6A8 8 0 0 1 9.4 4a8 8 0 1 0 10.6 10.6z"/></svg></button>
+      <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Section 14 &middot; Suitable crops after flooding</p>
+    <h1>Choosing crops for post-flood soil</h1>
+    <p class="lead">Rice suits fields where wet conditions persist. Maize, wheat, mustard and pulses suit fields once excess water has drained. The final choice depends on what the soil test shows.</p>
+  </div>
+</header>
+<div class="strata" aria-hidden="true"><span></span><span></span><span></span></div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Crop finder</p>
+      <h2>Match crops to your field</h2>
+      <p class="muted">Describe the field after the flood. If you have entered soil-test results on the data sheet, the deficiencies for a sampling zone fill in automatically.</p>
+    </div>
+
+    <div class="advisor">
+      <form class="panel advisor-form" id="advisor-form" novalidate>
+        <fieldset class="stack" style="--gap:.45rem">
+          <legend>Field condition</legend>
+          <div class="toggle-group">
+            <label for="cond-wet"><input type="radio" name="cond" id="cond-wet" value="wet"><span>Still wet<small>Wet conditions persist</small></span></label>
+            <label for="cond-drained"><input type="radio" name="cond" id="cond-drained" value="drained" checked><span>Drained<small>Excess water has drained</small></span></label>
+          </div>
+        </fieldset>
+        <fieldset class="stack" style="--gap:.45rem">
+          <legend>Season</legend>
+          <div class="toggle-group">
+            <label for="season-kharif"><input type="radio" name="season" id="season-kharif" value="kharif"><span>Kharif<small>Monsoon</small></span></label>
+            <label for="season-rabi"><input type="radio" name="season" id="season-rabi" value="rabi"><span>Rabi<small>Post-monsoon</small></span></label>
+            <label for="season-any"><input type="radio" name="season" id="season-any" value="any" checked><span>Not decided</span></label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <label for="from-zone">Deficiencies from my data sheet</label>
+          <select id="from-zone">
+            <option value="">Do not use &ndash; I&rsquo;ll tick them</option>
+            <option value="A">Sample A &middot; close to riverbank</option>
+            <option value="B">Sample B &middot; medium distance</option>
+            <option value="C">Sample C &middot; reference</option>
+          </select>
+          <p class="loaded-note" id="loaded-note"></p>
+        </div>
+        <fieldset>
+          <legend>Deficient or low after the flood</legend>
+          <ul class="check-list" id="def-list" style="margin-top:.3rem">
+            <li><label for="d-n"><input type="checkbox" id="d-n" value="N"><span>Nitrogen (N)</span></label></li>
+            <li><label for="d-p"><input type="checkbox" id="d-p" value="P"><span>Phosphorus (P)</span></label></li>
+            <li><label for="d-k"><input type="checkbox" id="d-k" value="K"><span>Potassium (K)</span></label></li>
+            <li><label for="d-s"><input type="checkbox" id="d-s" value="S"><span>Sulfur (S)</span></label></li>
+            <li><label for="d-camg"><input type="checkbox" id="d-camg" value="CaMg"><span>Calcium or magnesium</span></label></li>
+            <li><label for="d-micro"><input type="checkbox" id="d-micro" value="micro"><span>Micronutrients (Fe, Zn, Cu, Mn, B, Mo)</span></label></li>
+            <li><label for="d-om"><input type="checkbox" id="d-om" value="OM"><span>Organic matter</span></label></li>
+          </ul>
+        </fieldset>
+      </form>
+
+      <div class="adv-results" aria-live="polite">
+        <div class="panel" id="sources-panel">
+          <h3 class="panel-title">What to apply for the deficiencies</h3>
+          <div class="source-rows" id="sources"></div>
+          <p class="muted" style="font-size:.9rem">Exact quantities should be calculated from soil-test results and crop-specific recommendations.</p>
+        </div>
+        <div class="stack" style="--gap:.4rem">
+          <h3 id="crop-count">Suitable crops</h3>
+          <div class="crop-cards" id="crop-cards"></div>
+        </div>
+        <div class="excluded" id="excluded"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="section-head">
+      <p class="kicker">Section 14 &middot; Selection criteria</p>
+      <h2>What decides the crop</h2>
+    </div>
+    <ul class="tile-grid">
+      <li class="tile"><strong>Soil moisture</strong><span>How wet the field still is</span></li>
+      <li class="tile"><strong>Drainage conditions</strong><span>Whether excess water has gone</span></li>
+      <li class="tile"><strong>Soil nutrient status</strong><span>Deficiencies from the soil test</span></li>
+      <li class="tile"><strong>Soil pH</strong><span>Changes since the flood</span></li>
+      <li class="tile"><strong>Flood duration</strong><span>How long the land was under water</span></li>
+      <li class="tile"><strong>Season</strong><span>Kharif or rabi timing</span></li>
+      <li class="tile"><strong>Degree of soil damage</strong><span>Erosion, compaction, deposition</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Section 14.1 &middot; Recommended crops</p>
+      <h2>Crop suitability after flooding</h2>
+      <p class="muted">Rice, maize, wheat, mustard, pulses and vegetables are potential post-flood crops depending on moisture and drainage.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Crop</th><th scope="col">Suitability after flooding</th><th scope="col">Major nutrient requirements</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Rice / paddy</th><td>Suitable for areas where wet conditions persist</td><td class="mono">N, P, K</td></tr>
+          <tr><th scope="row">Maize</th><td>Suitable after excess water has drained</td><td>Particularly <span class="mono">N</span>, along with <span class="mono">P</span> and <span class="mono">K</span></td></tr>
+          <tr><th scope="row">Wheat</th><td>Suitable during the appropriate post-monsoon / rabi season after drainage</td><td class="mono">N, P, K</td></tr>
+          <tr><th scope="row">Mustard</th><td>Suitable in adequately drained soil</td><td class="mono">N, P, S</td></tr>
+          <tr><th scope="row">Chickpea</th><td>Suitable where soil has adequate drainage</td><td><span class="mono">P</span> and other nutrients; generally low starter <span class="mono">N</span></td></tr>
+          <tr><th scope="row">Lentil</th><td>Suitable after sufficient drainage</td><td><span class="mono">P</span> and other nutrients; generally low starter <span class="mono">N</span></td></tr>
+          <tr><th scope="row">Green gram</th><td>Short-duration option after flood recession</td><td><span class="mono">P, K</span> and micronutrients</td></tr>
+          <tr><th scope="row">Black gram</th><td>Suitable where adequate drainage exists</td><td><span class="mono">P, K</span> and micronutrients</td></tr>
+          <tr><th scope="row">Vegetables</th><td>Can be cultivated after the soil becomes suitable</td><td>Crop-specific</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="section-head">
+      <p class="kicker">Section 14.2 &middot; Importance of pulses</p>
+      <h2>Why pulses help a post-flood rotation</h2>
+    </div>
+    <div class="stack" style="--gap:1.25rem">
+      <p class="prose">Chickpea, lentil, green gram and black gram are legumes. They form associations with nitrogen-fixing bacteria and can help improve the soil&rsquo;s nitrogen status after a flood has depleted it.</p>
+      <ul class="chips"><li class="chip">Chickpea</li><li class="chip">Lentil</li><li class="chip">Green gram</li><li class="chip">Black gram</li></ul>
+      <div class="callout note">
+        <p class="callout-title">Pulses still need other nutrients</p>
+        <p>Biological nitrogen fixation does not remove the need for all fertilizer inputs. Phosphorus and other nutrient requirements still have to be met.</p>
+      </div>
+      <div><a class="btn" href="fertilizers.html">Next: fertilizers and amendments &rarr;</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="footer-title">Assessment of Soil Mineral and Nutrient Deficiency Before and After Flooding Near Riverbanks</p>
+      <p class="muted">Project report website. Soil-test values you enter on the Data &amp; Analysis page are saved only in your own browser.</p>
+      <p class="muted">&copy; <span data-year>2026</span> &middot; Riverbank Soil Study</p>
+    </div>
+    <nav aria-label="Footer"><ul><li><a href="index.html">Home</a></li><li><a href="background.html">Nutrients &amp; Flooding</a></li><li><a href="methodology.html">Methodology</a></li><li><a href="data.html">Data &amp; Analysis</a></li><li><a href="crops.html">Crops</a></li><li><a href="fertilizers.html">Fertilizers</a></li><li><a href="outlook.html">Outlook</a></li></ul></nav>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/soil-core.js" defer></script>
+<script src="assets/js/advisor.js" defer></script>
+</body>
+</html>
