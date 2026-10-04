@@ -1,0 +1,101 @@
+sample_id,period,site_zone,distance_to_river_m,sampling_depth_cm,soil_texture,soil_pH,soil_moisture_pct,nitrogen_mg_kg,phosphorus_mg_kg,potassium_mg_kg,organic_carbon_pct,electrical_conductivity_dS_m,data_type
+RB001,Before flood,Near riverbank,26,10,Loam,7.06,25.55,160.21,10.13,194.64,1.06,0.484,SIMULATED - for demonstration only
+RB001,After flood,Near riverbank,26,10,Loam,6.83,41.71,184.14,12.02,226.24,1.26,0.491,SIMULATED - for demonstration only
+RB002,Before flood,Mid floodplain,188,10,Clay loam,6.51,18.2,325.47,24.85,186.61,0.93,0.258,SIMULATED - for demonstration only
+RB002,After flood,Mid floodplain,188,10,Clay loam,6.49,25.6,329.89,23.9,200.54,0.93,0.395,SIMULATED - for demonstration only
+RB003,Before flood,Farther inland,399,0,Clay loam,6.75,25.12,331.23,22.39,177.05,1.01,0.594,SIMULATED - for demonstration only
+RB003,After flood,Farther inland,399,0,Clay loam,6.74,24.88,326.18,21.85,177.77,1.08,0.649,SIMULATED - for demonstration only
+RB004,Before flood,Near riverbank,28,0,Loam,6.46,21.19,177.05,7.24,133.09,0.86,0.504,SIMULATED - for demonstration only
+RB004,After flood,Near riverbank,28,0,Loam,6.22,32.18,214.47,9.53,151.88,0.85,0.598,SIMULATED - for demonstration only
+RB005,Before flood,Mid floodplain,131,20,Loam,6.81,29.8,350.26,23.64,258.34,0.74,0.271,SIMULATED - for demonstration only
+RB005,After flood,Mid floodplain,131,20,Loam,6.69,33.56,316.36,21.0,257.2,0.74,0.35,SIMULATED - for demonstration only
+RB006,Before flood,Farther inland,490,0,Silty loam,5.99,20.03,275.25,28.56,191.93,1.56,0.346,SIMULATED - for demonstration only
+RB006,After flood,Farther inland,490,0,Silty loam,5.83,19.66,276.22,31.98,195.47,1.58,0.374,SIMULATED - for demonstration only
+RB007,Before flood,Near riverbank,31,0,Clay loam,6.55,27.06,307.83,27.02,200.27,0.83,0.206,SIMULATED - for demonstration only
+RB007,After flood,Near riverbank,31,0,Clay loam,6.79,43.97,314.45,26.05,225.24,0.64,0.222,SIMULATED - for demonstration only
+RB008,Before flood,Mid floodplain,166,0,Silty loam,6.84,21.83,251.88,23.67,205.43,1.64,0.432,SIMULATED - for demonstration only
+RB008,After flood,Mid floodplain,166,0,Silty loam,6.68,24.81,263.8,22.28,206.9,1.68,0.471,SIMULATED - for demonstration only
+RB009,Before flood,Farther inland,447,0,Silty loam,5.93,14.21,417.33,8.63,139.22,1.83,0.98,SIMULATED - for demonstration only
+RB009,After flood,Farther inland,447,0,Silty loam,5.83,17.34,430.82,11.7,140.8,1.85,1.005,SIMULATED - for demonstration only
+RB010,Before flood,Near riverbank,21,10,Sandy loam,6.67,32.53,379.93,20.19,154.15,0.82,0.709,SIMULATED - for demonstration only
+RB010,After flood,Near riverbank,21,10,Sandy loam,6.53,46.1,346.83,24.45,169.61,0.64,0.737,SIMULATED - for demonstration only
+RB011,Before flood,Mid floodplain,181,10,Loam,7.09,19.52,283.93,10.27,179.64,1.65,0.59,SIMULATED - for demonstration only
+RB011,After flood,Mid floodplain,181,10,Loam,7.27,31.73,295.22,13.22,183.29,1.72,0.581,SIMULATED - for demonstration only
+RB012,Before flood,Farther inland,590,10,Clay loam,6.36,17.64,269.48,12.47,162.01,1.34,0.641,SIMULATED - for demonstration only
+RB012,After flood,Farther inland,590,10,Clay loam,6.44,18.78,288.1,11.23,164.51,1.34,0.641,SIMULATED - for demonstration only
+RB013,Before flood,Near riverbank,24,20,Sandy loam,7.14,14.3,284.71,26.34,157.19,0.96,0.438,SIMULATED - for demonstration only
+RB013,After flood,Near riverbank,24,20,Sandy loam,7.19,26.83,314.73,30.99,182.84,1.09,0.73,SIMULATED - for demonstration only
+RB014,Before flood,Mid floodplain,108,0,Clay loam,6.48,25.29,309.68,17.27,215.31,1.19,0.525,SIMULATED - for demonstration only
+RB014,After flood,Mid floodplain,108,0,Clay loam,6.43,30.16,336.84,22.04,232.67,1.37,0.629,SIMULATED - for demonstration only
+RB015,Before flood,Farther inland,505,0,Clay loam,6.41,13.31,217.04,16.37,225.03,1.82,0.212,SIMULATED - for demonstration only
+RB015,After flood,Farther inland,505,0,Clay loam,6.5,15.75,215.51,17.25,219.18,1.89,0.223,SIMULATED - for demonstration only
+RB016,Before flood,Near riverbank,24,20,Loam,7.56,34.71,293.36,17.81,240.52,0.89,0.501,SIMULATED - for demonstration only
+RB016,After flood,Near riverbank,24,20,Loam,7.53,46.38,270.46,16.47,202.27,0.81,0.651,SIMULATED - for demonstration only
+RB017,Before flood,Mid floodplain,154,20,Silty loam,6.65,24.5,260.38,15.18,163.11,1.39,0.275,SIMULATED - for demonstration only
+RB017,After flood,Mid floodplain,154,20,Silty loam,6.7,30.33,284.21,19.96,166.43,1.35,0.407,SIMULATED - for demonstration only
+RB018,Before flood,Farther inland,406,20,Loam,6.82,21.73,333.47,21.95,217.9,0.92,0.598,SIMULATED - for demonstration only
+RB018,After flood,Farther inland,406,20,Loam,6.82,21.31,333.93,20.42,227.87,0.92,0.601,SIMULATED - for demonstration only
+RB019,Before flood,Near riverbank,16,20,Clay loam,6.77,19.87,253.57,15.98,198.73,0.86,0.579,SIMULATED - for demonstration only
+RB019,After flood,Near riverbank,16,20,Clay loam,6.84,35.72,297.03,18.74,239.87,0.94,0.658,SIMULATED - for demonstration only
+RB020,Before flood,Mid floodplain,123,10,Sandy loam,6.76,16.5,294.22,11.2,242.79,1.65,0.459,SIMULATED - for demonstration only
+RB020,After flood,Mid floodplain,123,10,Sandy loam,6.74,17.26,277.74,8.71,248.79,1.75,0.494,SIMULATED - for demonstration only
+RB021,Before flood,Farther inland,530,0,Clay loam,7.31,19.15,233.71,22.99,221.69,1.36,0.155,SIMULATED - for demonstration only
+RB021,After flood,Farther inland,530,0,Clay loam,7.25,21.0,238.07,20.1,235.71,1.31,0.074,SIMULATED - for demonstration only
+RB022,Before flood,Near riverbank,33,20,Clay loam,6.55,10.24,261.13,15.81,192.54,0.8,0.604,SIMULATED - for demonstration only
+RB022,After flood,Near riverbank,33,20,Clay loam,6.51,19.04,293.95,22.4,193.61,0.88,0.633,SIMULATED - for demonstration only
+RB023,Before flood,Mid floodplain,119,20,Clay loam,6.41,20.79,277.8,7.57,122.2,1.39,0.393,SIMULATED - for demonstration only
+RB023,After flood,Mid floodplain,119,20,Clay loam,5.99,28.09,281.66,8.09,117.65,1.47,0.414,SIMULATED - for demonstration only
+RB024,Before flood,Farther inland,518,20,Loam,7.08,11.41,224.49,14.08,85.5,0.89,0.254,SIMULATED - for demonstration only
+RB024,After flood,Farther inland,518,20,Loam,7.11,13.78,217.56,11.01,91.09,0.9,0.259,SIMULATED - for demonstration only
+RB025,Before flood,Near riverbank,24,0,Loam,5.71,15.49,207.05,24.07,208.73,1.52,0.214,SIMULATED - for demonstration only
+RB025,After flood,Near riverbank,24,0,Loam,5.33,28.43,241.09,31.57,210.44,1.58,0.331,SIMULATED - for demonstration only
+RB026,Before flood,Mid floodplain,150,0,Clay loam,6.25,31.58,385.8,26.83,158.94,1.55,0.573,SIMULATED - for demonstration only
+RB026,After flood,Mid floodplain,150,0,Clay loam,6.33,41.61,414.04,25.28,161.65,1.58,0.503,SIMULATED - for demonstration only
+RB027,Before flood,Farther inland,496,20,Sandy loam,7.56,27.74,288.95,19.54,186.92,1.09,0.266,SIMULATED - for demonstration only
+RB027,After flood,Farther inland,496,20,Sandy loam,7.51,29.82,284.94,19.84,187.53,1.08,0.28,SIMULATED - for demonstration only
+RB028,Before flood,Near riverbank,23,0,Clay loam,6.82,19.34,248.89,16.66,174.29,1.35,0.465,SIMULATED - for demonstration only
+RB028,After flood,Near riverbank,23,0,Clay loam,6.54,28.65,284.28,16.99,150.38,1.14,0.591,SIMULATED - for demonstration only
+RB029,Before flood,Mid floodplain,184,20,Loam,7.51,22.04,273.02,20.99,327.16,1.44,0.321,SIMULATED - for demonstration only
+RB029,After flood,Mid floodplain,184,20,Loam,7.56,26.51,294.22,20.63,335.31,1.54,0.377,SIMULATED - for demonstration only
+RB030,Before flood,Farther inland,516,0,Loam,7.09,21.8,137.01,4.2,184.45,1.1,0.419,SIMULATED - for demonstration only
+RB030,After flood,Farther inland,516,0,Loam,7.02,24.52,173.13,4.97,181.65,1.12,0.41,SIMULATED - for demonstration only
+RB031,Before flood,Near riverbank,26,0,Clay loam,6.71,30.58,250.46,28.1,177.95,0.72,0.466,SIMULATED - for demonstration only
+RB031,After flood,Near riverbank,26,0,Clay loam,6.36,38.73,277.73,32.82,179.14,0.98,0.657,SIMULATED - for demonstration only
+RB032,Before flood,Mid floodplain,150,0,Clay loam,7.24,26.72,303.19,17.16,127.87,1.19,0.634,SIMULATED - for demonstration only
+RB032,After flood,Mid floodplain,150,0,Clay loam,7.22,36.45,331.34,22.32,167.95,1.24,0.671,SIMULATED - for demonstration only
+RB033,Before flood,Farther inland,597,0,Clay loam,6.3,20.96,266.35,10.34,181.27,0.88,0.623,SIMULATED - for demonstration only
+RB033,After flood,Farther inland,597,0,Clay loam,6.28,24.07,284.55,8.46,184.29,0.91,0.605,SIMULATED - for demonstration only
+RB034,Before flood,Near riverbank,29,10,Clay loam,7.54,28.12,278.92,20.57,217.1,1.3,0.459,SIMULATED - for demonstration only
+RB034,After flood,Near riverbank,29,10,Clay loam,7.52,39.08,256.28,19.94,242.27,1.31,0.619,SIMULATED - for demonstration only
+RB035,Before flood,Mid floodplain,156,20,Clay loam,6.93,24.41,149.43,16.63,86.16,1.25,0.47,SIMULATED - for demonstration only
+RB035,After flood,Mid floodplain,156,20,Clay loam,6.97,33.38,145.83,14.89,104.35,1.17,0.517,SIMULATED - for demonstration only
+RB036,Before flood,Farther inland,425,20,Clay loam,6.7,34.77,202.04,26.74,195.56,1.3,0.464,SIMULATED - for demonstration only
+RB036,After flood,Farther inland,425,20,Clay loam,6.68,35.41,202.83,28.34,219.27,1.32,0.533,SIMULATED - for demonstration only
+RB037,Before flood,Near riverbank,26,20,Sandy loam,6.97,22.9,294.97,17.04,133.87,0.68,0.586,SIMULATED - for demonstration only
+RB037,After flood,Near riverbank,26,20,Sandy loam,6.82,30.61,305.02,17.31,133.56,0.69,0.791,SIMULATED - for demonstration only
+RB038,Before flood,Mid floodplain,176,20,Clay loam,6.27,20.68,284.68,15.96,235.65,1.06,0.493,SIMULATED - for demonstration only
+RB038,After flood,Mid floodplain,176,20,Clay loam,6.13,28.19,303.59,17.86,243.3,1.1,0.557,SIMULATED - for demonstration only
+RB039,Before flood,Farther inland,603,0,Loam,5.8,21.05,261.34,20.44,204.17,1.05,0.626,SIMULATED - for demonstration only
+RB039,After flood,Farther inland,603,0,Loam,5.75,20.65,281.85,25.45,221.68,1.09,0.644,SIMULATED - for demonstration only
+RB040,Before flood,Near riverbank,19,10,Loam,6.63,17.45,279.39,8.23,164.9,1.29,0.508,SIMULATED - for demonstration only
+RB040,After flood,Near riverbank,19,10,Loam,6.71,26.05,326.1,5.52,169.54,1.39,0.474,SIMULATED - for demonstration only
+RB041,Before flood,Mid floodplain,126,0,Loam,6.8,18.79,228.15,15.54,157.68,0.94,0.873,SIMULATED - for demonstration only
+RB041,After flood,Mid floodplain,126,0,Loam,6.93,28.96,240.97,15.07,151.82,0.73,0.872,SIMULATED - for demonstration only
+RB042,Before flood,Farther inland,467,20,Clay loam,6.15,20.26,299.88,11.37,197.0,1.46,0.537,SIMULATED - for demonstration only
+RB042,After flood,Farther inland,467,20,Clay loam,6.23,24.98,293.02,15.38,190.65,1.52,0.568,SIMULATED - for demonstration only
+RB043,Before flood,Near riverbank,29,20,Loam,7.03,21.71,279.69,17.05,159.54,1.34,0.507,SIMULATED - for demonstration only
+RB043,After flood,Near riverbank,29,20,Loam,7.15,37.98,331.36,15.59,166.95,1.49,0.694,SIMULATED - for demonstration only
+RB044,Before flood,Mid floodplain,153,20,Sandy loam,6.47,12.83,274.52,22.66,112.02,1.0,0.221,SIMULATED - for demonstration only
+RB044,After flood,Mid floodplain,153,20,Sandy loam,6.42,18.75,285.94,24.39,133.22,0.93,0.223,SIMULATED - for demonstration only
+RB045,Before flood,Farther inland,454,10,Silty loam,6.71,14.98,316.56,23.55,198.39,0.66,0.441,SIMULATED - for demonstration only
+RB045,After flood,Farther inland,454,10,Silty loam,6.68,13.84,309.73,24.92,201.36,0.71,0.474,SIMULATED - for demonstration only
+RB046,Before flood,Near riverbank,23,0,Clay loam,6.06,25.36,414.31,21.95,163.98,1.06,0.388,SIMULATED - for demonstration only
+RB046,After flood,Near riverbank,23,0,Clay loam,5.94,34.22,444.92,17.26,197.65,1.05,0.551,SIMULATED - for demonstration only
+RB047,Before flood,Mid floodplain,172,20,Loam,6.59,20.96,170.72,16.87,253.29,0.81,0.504,SIMULATED - for demonstration only
+RB047,After flood,Mid floodplain,172,20,Loam,6.41,25.6,201.02,18.53,259.08,0.7,0.663,SIMULATED - for demonstration only
+RB048,Before flood,Farther inland,474,20,Silty loam,6.04,29.41,374.15,13.78,288.69,1.51,0.599,SIMULATED - for demonstration only
+RB048,After flood,Farther inland,474,20,Silty loam,5.9,30.82,369.47,12.79,279.23,1.52,0.664,SIMULATED - for demonstration only
+RB049,Before flood,Near riverbank,21,20,Sandy loam,6.19,29.3,284.92,20.17,300.44,1.7,0.369,SIMULATED - for demonstration only
+RB049,After flood,Near riverbank,21,20,Sandy loam,5.94,41.08,297.24,18.88,287.38,1.99,0.433,SIMULATED - for demonstration only
+RB050,Before flood,Mid floodplain,151,10,Sandy loam,6.74,9.05,270.23,17.24,280.62,0.69,0.361,SIMULATED - for demonstration only
+RB050,After flood,Mid floodplain,151,10,Sandy loam,6.78,17.86,274.04,18.15,285.09,0.83,0.364,SIMULATED - for demonstration only
